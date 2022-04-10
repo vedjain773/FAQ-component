@@ -27,6 +27,13 @@ body {
     display: grid;
     grid-template-columns: 50% 50%;
     overflow: hidden;
+    position: relative;
+}
+
+.box {
+    position: absolute;
+    top: 40%;
+    left: 7%;
 }
 
 .desg-sec {

@@ -23,8 +23,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [here](https://your-solution-url.com)
-- Live Site URL: [here](https://your-live-site-url.com)
+- Solution URL: [here](https://github.com/vedjain773/FAQ-component)
+- Live Site URL: [here](https://vedjain773.github.io/FAQ-component/)
 
 ## My process
 

@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;500;700;800&display=swap');
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    height: 100%;
+    font-family: "Kumbh Sans", sans-serif;
+    background-image: linear-gradient(hsl(273, 75%, 66%), hsl(240, 73%, 65%));
+    background-repeat: no-repeat;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+}
+
+.card {
+    width: 960px;
+    height: 550px;
+    background-color: white;
+    border-radius: 15px;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    overflow: hidden;
+}
+
+.desg-sec {
+    grid-column: 1 / 2;
+    position: relative;
+}
+
+.desg-sec .pattern {
+    position: absolute;
+    right: 17.5%;
+    bottom: -20%;
+}
+
+.desg-sec .woman-desk {
+    position: absolute;
+    top: 15%;
+    right: 17.5%;
+}
+
+.text-sec {
+    grid-column: 2 / 3s;
+}
+
+.faq {
+    color: hsl(238, 29%, 16%);
+    font-size: 2rem;
+    font-weight: 800;
+    margin-top: 3.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.qandas .qa {
+    padding: 1.45rem 0 1.45rem;
+    width: 85%;
+    border-bottom: 2px solid hsl(240, 5%, 91%);
+    cursor: pointer;
+    font-size: 16.5px;
+}
+
+.qandas .qa .question {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    color: hsl(237, 12%, 33%);
+    font-weight: 500;
+}
+
+.qandas .qa .answer {
+    color: hsl(240, 6%, 50%);
+    padding: 10px 0 5px;
+    display: none;
+}
+
+.qandas .qa img {
+    width: 10px;
+    height: 7px;
+}
+
+@keyframes fade_in {
+    0% {opacity: 0.0;}
+    20% {opacity: 0.2;}
+    40% {opacity: 0.4;}
+    60% {opacity: 0.6;}
+    80% {opacity: 0.8;}
+    100% {opacity: 1.0;}
+}
+
+.qandas .qa:hover .question {
+    color: hsl(14, 88%, 65%);
+}
+
+.qandas .qa.active .question {
+    color: hsl(238, 29%, 16%);
+}
+
+.qandas .qa.active .answer {
+    display: block;
+    animation-name: fade_in;
+    animation-duration: 300ms;
+}
+
+.qandas .qa.active img {
+    transform: rotate(180deg);
+}
